@@ -1,5 +1,5 @@
 import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, HashRouter } from "react-router-dom";
 import Applayout from "./component/page/AppLayout";
 import { FavouriteSong } from "./FavouriteSong";
 import { Home } from "./Home";
@@ -34,7 +34,7 @@ const App = () => {
     },
   ]);
 
-  return <RouterProvider router={router} />;
+  return <HashRouter router={router} />;
 };
 
 export default App;
